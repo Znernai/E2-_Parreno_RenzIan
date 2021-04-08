@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link href= "C:\Users\Win10\IT Elective 3\E2]_Parreno_RenzIan\Home.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+            <div class="navbar">
+                <img src="img/logo2.png" class="logo2">
+               
+            </div>
+
+            <div class="content">
+                <div class="left-col">
+                    <h1>THE <br>VIBES</h1>
+                </div>
+                <div class="right-col">
+                    <p>KLIGANDE</p>   
+                     <img src="img/play.png" id="icon">
+                </div>
+            </div>
+    </div>
+    <audio id="mySong">
+        <source src="img/song.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        var mySong = document.getElementById("mySong");
+        var icon = document.getElementById("icon");
+        icon.onclick=function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src="img/pause.png";
+            }else{
+                mySong.pause();
+                icon.src="img/play.png";
+            }
+        }   
+        
+
+    </script>
+    
+</body>
+</html> 
